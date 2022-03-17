@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
+import Button from './Button';
 
 const Navbar = () => {
 
     const [click, setClick] = useState(false);
     //click will determine whether it shows the hamburger menu or not
+
+    const [buttton, setButton] = useState(true);
 
     const handleClick = () => {
         setClick(!click);
@@ -13,6 +16,17 @@ const Navbar = () => {
     const closeMobileMenu = () => {
         setClick(false);
     }; //closes menu because click gets set to false so its not active 
+
+    const showButton = () => {
+        if(window.innerWidth <= 960) {
+            setButton(false);
+        } else {
+            setButton(true);
+        }
+    }; //determines whether the button will be shown or not 
+
+    window.addEventListener('resize', showButton);
+    //if the window gets resized to smaller than 960 it will set button to false 
 
     return (
         <>
@@ -62,6 +76,7 @@ const Navbar = () => {
                             </Link>
                         </li> {/* link 5 is an EXTERNAL link */}
                     </ul>
+                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
                 </div>
             </nav>
         </>
