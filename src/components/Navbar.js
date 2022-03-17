@@ -24,7 +24,6 @@ const Navbar = () => {
             setButton(true);
         }
     }; //determines whether the button will be shown or not 
-    //testing again
 
     window.addEventListener('resize', showButton);
     //if the window gets resized to smaller than 960 it will set button to false 
