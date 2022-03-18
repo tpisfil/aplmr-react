@@ -93,6 +93,7 @@
     }
   
     .nav-menu.active {
+      justify-content: start; /* mobile menu goes to the top */
       background: #242222;
       left: 0;
       opacity: 1;

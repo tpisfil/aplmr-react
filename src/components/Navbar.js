@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 import './Navbar.css';
@@ -26,6 +26,10 @@ const Navbar = () => {
         }
     }; //determines whether the button will be shown or not 
 
+    useEffect(() => {
+        showButton();
+    }, []);
+
     window.addEventListener('resize', showButton);
     //if the window gets resized to smaller than 960 it will set button to false 
 
@@ -34,7 +38,7 @@ const Navbar = () => {
         <nav className="navbar">
 
             <div className="navbar-container">
-                <Link to="/" className='navbar-logo'>
+                <Link to="/" className='navbar-logo' onClick={closeMobileMenu}>
                     APLMR <i class="fa-solid fa-screwdriver-wrench"/>
                 </Link>
                 {/* this is for the logo in the top left corner of the navbar */}
