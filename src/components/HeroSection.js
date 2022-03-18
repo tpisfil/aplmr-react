@@ -1,9 +1,9 @@
 import React from 'react';
 import '../App.css';
 import Button from './Button';
-import './Main.css';
+import './HeroSection.css';
 
-const Main = () => {
+const HeroSection = () => {
   return (
     <div className='hero-container'>
         <video src="/videos/video-2.mp4" autoPlay loop muted />
@@ -11,9 +11,10 @@ const Main = () => {
         <p>What are you waiting for?</p>
         <div className="hero-btns">
             <Button className="btns" buttonStyle='btn--outline' buttonSize="btn--large">GET STARTED</Button>
+            <Button className="btns" buttonStyle='btn--primary' buttonSize="btn--large">WATCH TRAILER <i className='far fa-play-circle'/></Button>
         </div>
     </div>
   )
 }
 
-export default Main
+export default HeroSection
