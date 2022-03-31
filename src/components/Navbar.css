@@ -90,6 +90,7 @@
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
+      justify-content: start; /* mobile menu goes to the top during the exit transition*/
     }
   
     .nav-menu.active {

@@ -1,5 +1,7 @@
 import React from 'react';
 import Button from './Button';
+import './Footer.css';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -16,6 +18,40 @@ function Footer() {
                     <input type="email" name="email" placeholder='Your Email' className='footer-input'/>
                     <Button buttonStyle='btn--outline'>Subscribe</Button>
                 </form>
+            </div>
+        </section>
+        <div className="footer-links">
+            
+            <div className="footer-link-wrapper">
+                <div className="footer-link-items">
+                    <h2>About Us</h2>
+                    <Link to='/sign-up'>How it works</Link>
+                    <Link to='/'>Testimonials</Link>
+                    <Link to='/'>Careers</Link>
+                    <Link to='/'>Investors</Link>
+                    <Link to='/'>Terms of Service</Link>
+                </div>                
+            </div>
+            
+            <div className="footer-link-wrapper">
+                <div className="footer-link-items">
+                    <h2>About Us</h2>
+                    <Link to='/sign-up'>How it works</Link>
+                    <Link to='/'>Testimonials</Link>
+                    <Link to='/'>Careers</Link>
+                    <Link to='/'>Investors</Link>
+                    <Link to='/'>Terms of Service</Link>
+                </div>                
+            </div>
+
+        </div>
+        <section className="social-media">
+            <div className="social-media-wrap">
+                <div className="footer-logo">
+                    <Link to="/" className="social-logo">
+                        TRVL <i className="fab fa-typo3  "></i>
+                    </Link>
+                </div>
             </div>
         </section>
     </div>
