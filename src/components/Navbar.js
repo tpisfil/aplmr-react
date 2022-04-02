@@ -39,7 +39,8 @@ const Navbar = () => {
 
             <div className="navbar-container">
                 <Link to="/" className='navbar-logo' onClick={closeMobileMenu}>
-                    APLMR <i className="fa-solid fa-screwdriver-wrench"/>
+                    AP Lawn Mower Repair 
+                    {/* <i className="fa-solid fa-screwdriver-wrench"/> */}
                 </Link>
                 {/* this is for the logo in the top left corner of the navbar */}
 
