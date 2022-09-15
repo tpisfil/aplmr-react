@@ -10,8 +10,8 @@ const HeroSection = () => {
         <h1>AP Lawn Mower Repair</h1>
         <p>Hablamos Espa&ntilde;ol!</p>
         <div className="hero-btns">
-            <Button className="btns" buttonStyle='btn--outline' buttonSize="btn--large">GET STARTED</Button>
-            <Button className="btns" buttonStyle='btn--primary' buttonSize="btn--large">WATCH TRAILER <i className='far fa-play-circle'/></Button>
+            <Button className="btns" buttonStyle='btn--outline' buttonSize="btn--large">About Us </Button>
+            <Button className="btns" buttonStyle='btn--primary' buttonSize="btn--large"><i class="fa-solid fa-phone"/> Contact Us!</Button>
         </div>
     </div>
   )
