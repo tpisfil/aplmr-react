@@ -6,5 +6,5 @@ Company Main Color:
 #990B07
 
 As of today: 
-**Sept 21st, 2022**  
+**Sept 28th, 2022**  
 The website is **NOT** live yet. 
