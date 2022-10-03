@@ -59,19 +59,19 @@ const Navbar = () => {
 
                     <li className='nav-item'>
                         <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                            About Us
+                            Services1
                         </Link>
                     </li> {/* link 2 */}
 
                     <li className='nav-item'>
-                        <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                            Services
+                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
+                            Services2
                         </Link>
                     </li> {/* link 3 */}
                     
                     <li className='nav-item'>
                         <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                            Gallery
+                            Products
                         </Link>
                     </li> {/* link 3 */}
 
